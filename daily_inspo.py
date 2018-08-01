@@ -23,17 +23,11 @@ if __name__ == '__main__':
     post_authors = soup.find('p', class_='author').text
     
     if soup.find('post_authors') is None:
-<<<<<<< HEAD
-        fromNumber = '+16314029977'
-        toNumber = '+16318735203'
-        message = (post_quotes + "\n" + post_authors)
-        client.messages.create(to=toNumber, from_=fromNumber, body=message)
-=======
         client.messages.create (
             from_= '+16314029977'
             to= '+16318735203'
             body= post_quotes + "\n" + post_authors
             )
->>>>>>> 9d4e59aaf50ec4bc5efc0409dcacb35232964aa5
+
 
 
